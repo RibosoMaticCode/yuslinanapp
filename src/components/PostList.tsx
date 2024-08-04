@@ -31,7 +31,7 @@ const PostList: React.FC = ({  }) => {
   return (
     <ul>
       {posts.map(post => (
-        <PostItem post={post} />
+        <PostItem key={post.id} post={post} />
       ))}
     </ul>
   );
